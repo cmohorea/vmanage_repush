@@ -71,7 +71,7 @@ def fetch_wan_edges(sdwan, target_devices):
     return ([result,skip])
 
 # ================================================================================= #
-def wait_for_task(sdwan, task_id, interval=5, maxtime=60):
+def wait_for_task(sdwan, task_id, interval=5, maxtime=300):
     """wait for async task until complete with 1 min timeout"""
 
     task_url = "/device/action/status/"+task_id
